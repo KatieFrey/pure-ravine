@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 const Header = () => <h2>Header</h2>;
 const Dashboard = () => <h2>Dashboard</h2>;
-const SurveryNow = () => <h2>SurveryNow</h2>;
+const SurveyNew = () => <h2>SurveyNew</h2>;
 const Landing = () => <h2>Landing</h2>;
 
 const App = () => {
@@ -11,8 +11,10 @@ const App = () => {
     <div>
       <BrowserRouter>
         <div>
+          <Header />
           <Route exact path="/" component={Landing} />
-          <Route path="/surveys" component={Dashboard} />
+          <Route exact path="/surveys" component={Dashboard} />
+          <Route path="/surveys/new" component={SurveyNew} />
         </div>
       </BrowserRouter>
     </div>
