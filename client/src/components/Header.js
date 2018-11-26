@@ -7,6 +7,7 @@ class Header extends Component {
     this.renderContent = this.renderContent.bind(this);
   }
   renderContent() {
+    console.log("Auth: ", this.props.auth);
     switch (this.props.auth) {
       case null:
         return;
