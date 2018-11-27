@@ -19,4 +19,7 @@ class Payments extends Component {
   }
 }
 
-export default Payments;
+export default connect(
+  null,
+  actions
+)(Payments);
